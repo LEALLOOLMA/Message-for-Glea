@@ -275,13 +275,6 @@ h6 {
     font-size: 1rem;
   }
 }
-
-.message p.highlight {
-  margin: 1.75rem 0;
-  padding: 1rem 1.25rem;
-  border-top: 1px solid #e8b5a9;
-  border-bottom: 1px solid #e8b5a9;
-  color: #c52848;
   font-size: 1.2rem;
   font-style: italic;
   text-align: center;
