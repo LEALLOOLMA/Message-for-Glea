@@ -224,12 +224,15 @@ h6 {
   .photo-card6,
   .photo-card7,
   .photo-card8 {
-    position: relative;
-    left: auto;
-    right: auto;
-    top: auto;
-    width: min(100%, 280px);
+    position: absolute;
+    width: 84px;
   }
+
+  .photo-card7,
+  .photo-card8 {
+    width: 100px;
+  }
+
   .message {
     padding: 2rem 1.25rem;
   }
