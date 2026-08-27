@@ -28,6 +28,10 @@ body {
   padding-right: 220px;
 }
 
+.photo-gallery {
+  display: contents;
+}
+
 .photo-card,
 .photo-card2,
 .photo-card3,
@@ -206,14 +210,18 @@ h6 {
 
 @media (max-width: 700px) {
   .page-shell {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1.25rem;
+    display: block;
     min-height: auto;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
+  }
+
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    width: min(100%, 420px);
+    margin: 0 auto 1.75rem;
+    padding: 0 0.5rem;
   }
 
   .photo-card,
@@ -224,16 +232,24 @@ h6 {
   .photo-card6,
   .photo-card7,
   .photo-card8 {
-    position: absolute;
-    width: 84px;
+    position: static;
+    width: 100%;
+    transform: none;
   }
 
-  .photo-card7,
-  .photo-card8 {
-    width: 100px;
+  .photo-card:hover,
+  .photo-card2:hover,
+  .photo-card3:hover,
+  .photo-card4:hover,
+  .photo-card5:hover,
+  .photo-card6:hover,
+  .photo-card7:hover,
+  .photo-card8:hover {
+    transform: scale(1.03);
   }
 
   .message {
+    width: min(100%, 700px);
     padding: 2rem 1.25rem;
   }
 
